@@ -1,5 +1,5 @@
 """
-Random Generate program V.1.6
+Random Generate program V.1.7
 
 by @gtahriz@ZeroHX
 """
@@ -23,11 +23,11 @@ def rand():
     print('||        　|　|、＼             ||')
     print('||        　| 丿 ＼ ⌒)          ||')
     print('||        　| |　　) /           ||')
-    print('||        ノ )　　Lﾉ             ||')
+    print('||         ノ )　　Lﾉ            ||')
     print('||        (_／                   ||')
     print('___________________________________')
     print()
-    choice = input('Choose your way (<1> num/<2> custom/<3> YN): ')
+    choice = input('Choose your way (<1>num | <2>custom | <3>YN): ')
 
     #Random number in range(int(input()))
     if choice.lower() == 'num' or choice == '1':
@@ -81,6 +81,7 @@ def rand():
             print('        YYYYYYYY            EEEEEEEEEEEEEEEEE     SSSSSSSSSSSSSSS')
             print('        YYYYYYYY            EEEEEEEEEEEEEEEEE      SSSSSSSSSSSSS')
             print('        YYYYYYYY            EEEEEEEEEEEEEEEEE       SSSSSSSSSSS')
+        
         elif yn[ran3] == 'NO!':
             print('NNNNNNNNNNNNNN          NNNNNNN          OOOOOOOOOOOOOOOOOOOOOO')
             print('NNNNNNNNNNNNNNN         NNNNNNN          OOOOOOOOOOOOOOOOOOOOOO')
@@ -97,6 +98,7 @@ def rand():
             print('NNNNNNN         NNNNNNNNNNNNNNN          OOOOOO          OOOOOO')
             print('NNNNNNN          NNNNNNNNNNNNNN          OOOOOOOOOOOOOOOOOOOOOO')
             print('NNNNNNN           NNNNNNNNNNNNN          OOOOOOOOOOOOOOOOOOOOOO')
+    
     else:
         print("WTF are you enter!!")
 
