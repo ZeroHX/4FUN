@@ -1,5 +1,5 @@
 """
-Random Generate program V.1.8
+Random Generate program V.2.0
 
 by @gtahriz@ZeroHX
 """
@@ -29,10 +29,10 @@ def rand():
     print()
     print('This program can input alphabet(lower & upper) and number')
     print('___________________________________')
-    choice = input('Choose your way\n1: Number \n2: Dice\n3: Yes/No\n4: Custom\nEnter your way >>> ')
+    choice = input('Choose your way\n1: Number \n2: Dice\n3: Yes/No\n4: Custom\nEnter your way >>> ').lower()
 
     #Random number in range(int(input()))
-    if choice.lower() in ['num', '1', 'number']:
+    if choice in ['num', '1', 'number']:
         num = int(input('Enter your range: '))
         print('--------------------------->')
         #Random number
@@ -45,7 +45,7 @@ def rand():
         print('Have a nice day !!!')
 
     #Random Dice (1-6)
-    elif choice.lower() in ['dice', '2']:
+    elif choice in ['dice', '2']:
         ran2 = random.randrange(7)
         ht = [1, 2, 3, 4, 5, 6]
         print('***************************')
@@ -109,10 +109,10 @@ def rand():
             print('|    o        o   |')
             print('|                 |')
             print(' _________________')
-            print('Have a nice day !!')
+        print('Have a nice day !!')
 
     #Random yes or no
-    elif choice.lower() in ['yn', '3', 'yes-no']:
+    elif choice in ['yn', '3', 'yes-no']:
         ran3 = random.randrange(2)
         yn = ['YES!', 'NO!']
         print(yn[ran3])
@@ -152,7 +152,7 @@ def rand():
             print('Have a nice day !!')
 
     #Random choice with (choice = list, random >> index)
-    elif choice.lower() == 'custom' or choice == '4':
+    elif choice == 'custom' or choice == '4':
         #size of loop
         time = int(input("How many choice?: "))
         print()
@@ -174,6 +174,6 @@ def rand():
     print('--------------------------->')
 
     ter = input('Play Again?(Y/N): ')
-    if ter.lower() in ['y', '1', 'yes']:
+    if ter in ['y', '1', 'yes']:
         rand()
 rand()
