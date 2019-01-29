@@ -1,5 +1,5 @@
 """
-Random Generate program V.2.0
+Random Generate program V.2.1
 
 by @gtahriz@ZeroHX
 """
@@ -46,7 +46,7 @@ def rand():
 
     #Random Dice (1-6)
     elif choice in ['dice', '2']:
-        ran2 = random.randrange(7)
+        ran2 = random.randrange(6)
         ht = [1, 2, 3, 4, 5, 6]
         print('***************************')
         #Dice one
